@@ -506,6 +506,7 @@
     "prone": "Prone",
     "prone-attacker": "Prone attacker: –4 penalty on melee attack rolls and cannot use a ranged weapon (except for a crossbow).",
     "prone-defender": "Prone defender: +4 bonus to AC against ranged attacks, –4 penalty to AC against melee attacks.",
+    "psionic": "Psionic",
     "qty": "Qty",
     "quantity": "Quantity",
     "query-modifier": "Query modifier for:",
