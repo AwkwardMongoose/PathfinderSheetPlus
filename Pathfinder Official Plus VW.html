@@ -11725,7 +11725,7 @@
         pfom.update_spells(9,e.sourceAttribute.substring(18, 38));
     });
     // --- PC/NPC Spell-like abilities
-    on("change:repeating_spell-like:spellname change:repeating_spell-like:spelltype change:repeating_spell-like:spellschool change:repeating_spell-like:spellclasslevel change:repeating_spell-like:spellcastingtime change:repeating_spell-like:spellrange change:repeating_spell-like:spellarea change:repeating_spell-like:spelltargets change:repeating_spell-like:spelleffect change:repeating_spell-like:spellduration change:repeating_spell-like:spellsaveflag change:repeating_spell-like:spellsave change:repeating_spell-like:spelldc_mod change:repeating_spell-like:spellresistanceflag change:repeating_spell-like:spellresistance change:repeating_spell-like:spellatkflag change:repeating_spell-like:spellatktype change:repeating_spell-like:spellatkmod change:repeating_spell-like:spellatkcritrange change:repeating_spell-like:spelldmgcritmulti change:repeating_spell-like:spelldmgflag change:repeating_spell-like:spelldmg change:repeating_spell-like:spelldmgtype change:repeating_spell-like:spelldmg2flag change:repeating_spell-like:spelldmg2name change:repeating_spell-like:spelldmg2 change:repeating_spell-like:spelldmg2type change:repeating_spell-like:spelldescflag change:repeating_spell-like:spelldesc change:repeating_spell-like:notes change:repeating_spell-like:timesperday change:repeating_spell-like:perday_max change:repeating_spell-like:perday_qty", (e) => {
+    on("change:repeating_spell-like:spellname change:repeating_spell-like:spelltype change:repeating_spell-like:spellschool change:repeating_spell-like:spellclasslevel change:repeating_spell-like:spellcastingtime change:repeating_spell-like:spellcomponent change:repeating_spell-like:spellrange change:repeating_spell-like:spellarea change:repeating_spell-like:spelltargets change:repeating_spell-like:spelleffect change:repeating_spell-like:spellduration change:repeating_spell-like:spellsaveflag change:repeating_spell-like:spellsave change:repeating_spell-like:spelldc_mod change:repeating_spell-like:spellresistanceflag change:repeating_spell-like:spellresistance change:repeating_spell-like:spellatkflag change:repeating_spell-like:spellatktype change:repeating_spell-like:spellatkmod change:repeating_spell-like:spellatkcritrange change:repeating_spell-like:spelldmgcritmulti change:repeating_spell-like:spelldmgflag change:repeating_spell-like:spelldmg change:repeating_spell-like:spelldmgtype change:repeating_spell-like:spelldmg2flag change:repeating_spell-like:spelldmg2name change:repeating_spell-like:spelldmg2 change:repeating_spell-like:spelldmg2type change:repeating_spell-like:spelldescflag change:repeating_spell-like:spelldesc change:repeating_spell-like:notes change:repeating_spell-like:timesperday change:repeating_spell-like:perday_max change:repeating_spell-like:perday_qty", (e) => {
         pfom.update_spells("like",e.sourceAttribute.substring(21, 41));
     });
 
@@ -12090,8 +12090,8 @@
         const pfoglobals_atk_fields = ["npc","strength_oneandahalf_mod","strength_half_mod","dexterity_oneandahalf_mod","dexterity_half_mod","melee_mod","ranged_mod","cmb_mod","bab","bab_max","fob","rollnotes_attack","whispertype","rollshowchar","bab_multi","melee_multi","ranged_multi","cmb_multi","fob_multi","attack_bonus","damage_bonus","melee_damage_bonus","ranged_damage_bonus"].concat(pfoglobals_mods);
         const pfoglobals_abilities_attr = ["perday","perday_max","perday_qty"];
         const pfoglobals_repsec_traits = [{section:"abilities",attrs:pfoglobals_abilities_attr}];
-        const pfoglobals_spell_attr = ["spelllevel","spellcaster","spellname","spellschool","spellclasslevel","spellcastingtime","spellrange","spellarea","spelltargets","spelleffect","spellduration","spellsaveflag","spellsave","spelldc_mod","spellresistanceflag","spellresistance","spellatkflag","spellatktype","spellatkmod","spellatkcritrange","spelldmgcritmulti","spelldmgflag","spelldmg","spelldmgtype","spelldmg2flag","spelldmg2name","spelldmg2","spelldmg2type","spelldescflag","spelldesc","notes"];
-        const pfoglobals_spell_only_attr = ["spellcomponent"];
+        const pfoglobals_spell_attr = ["spelllevel","spellcaster","spellname","spellschool","spellclasslevel","spellcastingtime","spellcomponent","spellrange","spellarea","spelltargets","spelleffect","spellduration","spellsaveflag","spellsave","spelldc_mod","spellresistanceflag","spellresistance","spellatkflag","spellatktype","spellatkmod","spellatkcritrange","spelldmgcritmulti","spelldmgflag","spelldmg","spelldmgtype","spelldmg2flag","spelldmg2name","spelldmg2","spelldmg2type","spelldescflag","spelldesc","notes"];
+        const pfoglobals_spell_only_attr = ["spellcomponent2"];
         const pfoglobals_spell_like_attr = ["spelltype","timesperday","perday_max","perday_qty"];
         var pfoglobals_repsec_spell = [];
         const pfoglobals_spell_fields = ["melee_mod","ranged_mod","cmb_mod","rollnotes_spell","whispertype","rollshowchar","caster1_level", "caster2_level","caster1_flag","caster2_flag","caster1_class","caster2_class","armor_spell_failure","caster1_spell_failure","caster2_spell_failure","npc","caster1_concentration_roll","caster2_concentration_roll","caster1_dc_level_0","caster1_dc_level_1","caster1_dc_level_2","caster1_dc_level_3","caster1_dc_level_4","caster1_dc_level_5","caster1_dc_level_6","caster1_dc_level_7","caster1_dc_level_8","caster1_dc_level_9","caster2_dc_level_0","caster2_dc_level_1","caster2_dc_level_2","caster2_dc_level_3","caster2_dc_level_4","caster2_dc_level_5","caster2_dc_level_6","caster2_dc_level_7","caster2_dc_level_8","caster2_dc_level_9"].concat(pfoglobals_mods);
@@ -14295,6 +14295,11 @@
                                 } else if(cdata.data["Casting Time"]) {
                                     update[`${repsec}${newrowid}_spellcastingtime`] = cdata.data["Casting Time"];
                                 }
+                                if(obj["Components"]) {
+                                    update[`${repsec}${newrowid}_spellcomponent`] = obj["Components"];
+                                } else if(cdata.data["Components"]) {
+                                    update[`${repsec}${newrowid}_spellcomponent`] = cdata.data["Components"];
+                                }
                                 if(obj["Range"]) {
                                     update[`${repsec}${newrowid}_spellrange`] = obj["Range"];
                                 } else if(cdata.data["Range"]) {
@@ -14394,6 +14399,9 @@
                         }
                         if(obj["Casting-time"]) {
                             update[`${repsec}${newrowid}_spellcastingtime`] = obj["Casting-time"];
+                        }
+                        if(obj["component"]) {
+                            update[`${repsec}${newrowid}_spellcomponent`] = obj["component"];
                         }
                         if(obj["Range"]) {
                             update[`${repsec}${newrowid}_spellrange`] = obj["Range"];
@@ -16077,11 +16085,9 @@
             if(v[`repeating_spell-${spell_level}_${spellid}_spellcastingtime`]) {
                 rollbase += `{{castingtime=${v[`repeating_spell-${spell_level}_${spellid}_spellcastingtime`]}}}`;
             }
-            // component
-            if (spell_level != "like") {
-                if(v[`repeating_spell-${spell_level}_${spellid}_spellcomponent`]) {
-                    rollbase += `{{component=${v[`repeating_spell-${spell_level}_${spellid}_spellcomponent`]}}}`;
-                }
+            // component    
+            if(v[`repeating_spell-${spell_level}_${spellid}_spellcomponent`]) {
+                rollbase += `{{component=${v[`repeating_spell-${spell_level}_${spellid}_spellcomponent`]}}}`;
             }
             // range
             if(v[`repeating_spell-${spell_level}_${spellid}_spellrange`]) {

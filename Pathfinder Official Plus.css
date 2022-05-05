@@ -3242,9 +3242,13 @@ input.sheet-tabspell:checked + span {
   text-transform: uppercase;
 }
 
+.sheet-psipsi {
+  display: none;
+}
+
 .sheet-psionicsswitch[value="1"] ~ .sheet-psispell {
   display: none;
 }
-.sheet-psionicsswitch[value="0"] ~ .sheet-psipsi {
-  display: none;
+.sheet-psionicsswitch[value="1"] ~ .sheet-psipsi {
+  display: block;
 }
